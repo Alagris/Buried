@@ -1,0 +1,47 @@
+BASICS:
+0.If you are new take your time and study code. You should start in folder src:
+	- net.BuriedMain
+	- net.swing.src.env.WorldSettings
+Folder srcAI is not part of game. Code there is used for testing AI that is very early in development.
+Feel free to add necessary comment. They will help other new 
+people to understand everything better and study code faster.
+Mind that not everyone here is a native English speaker,
+so if you are one and you find some language mistakes feel free to
+correct them.  
+
+1.Before you start coding make sure that files that you want to use
+ aren't already being used by someone else.Then post an information
+ in Programmer's Haven on HipChat. You should declare:
+	-which source folder you work in (if there are many of them)
+	-which package (or packages) you are going to use
+	-what you are going to change,add,remove etc. (e.g. fixing AI of a particular entity)
+2.When you finish and debug code, upload it to remote repository. Information about it will be posted automatically
+3.When you work on something try make changes only in those packages that you declared to use 
+4.You really shouldn't make any changes in packages (at least classes) that are used by another programmer at the moment.
+5.If you need to break 3rd rule at first contact the programmer that works with those files
+6.If you find conflicts in files merge them but don't erase any line of code (just comment them and put //MERGED above those lines) so nopony will loose work
+7.From time to time we are going to organize "debugging days" which  
+means that everyone finishes what he/she is doing and synchronizes 
+code. Then all programmers try to remove/change every possible loop, variable 
+or even whole method to make code cleaner and working faster. We will
+especially pay attention to tags //MERGED and //FIXME. It's also a good time
+to add some necessary comments.
+
+
+PROGRAMMING IN THE SAME FILES:
+-if you want to code the same thing with another programmer it's good to communicate in real time (e.g.via Skype). It's useful when you have a problem that you cannot solve on your own.
+-use this link http://cosketch.com/Rooms/tceksws to plan or/and share your ideas with other programmers
+ 
+ 
+GOOD HABITS:
+-synchronize your files with git repository as often as possible
+-don't push code to git repository until you are sure that it doesn't contain any major bugs
+-keep high performance and measure your algorithms with Test class (net.swing.src.data.Test)
+-try not to use static classes (classes with all methods being static) until its needed
+-always plan algorithm before you start coding it
+-try not to use IndexOutOfBoundsException. There is a faster way: AImath.validateIndex();
+-just remember these simple rules and everything will be fine:
+	-max performance
+	-min variables and loops
+	-universal methods
+	-huge comments	(if you see that somewhere are not enough comments you can add or modify them)

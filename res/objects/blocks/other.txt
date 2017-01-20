@@ -1,0 +1,4 @@
+5_stone brick
+6_stone brick2
+7_stone brick3
+8_grass fence

@@ -1,0 +1,9 @@
+stone brick
+stone brick2
+stone brick3
+grass fence
+grass fence2
+grass
+null
+box
+rope
